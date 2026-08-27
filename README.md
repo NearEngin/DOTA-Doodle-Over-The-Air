@@ -63,7 +63,9 @@ a second ESP32.
   Directory   Purpose
   ----------- --------------------------------------
   `tx/`       ESP32 transmitter PlatformIO project
+  
   `rx/`       ESP32 receiver PlatformIO project
+  
   `Python_Code/`       Python mouse-drawing application
 
 ------------------------------------------------------------------------
