@@ -58,36 +58,13 @@ a second ESP32.
 
 ------------------------------------------------------------------------
 
-## Repository Structure
-
-``` text
-esp32-wireless-drawing/
-│
-├── TX/
-│   ├── platformio.ini
-│   └── src/
-│       └── main.cpp
-│
-├── RX/
-│   ├── platformio.ini
-│   └── src/
-│       └── main.cpp
-│
-├── PC/
-│   └── live_draw.py
-│
-├── README.md
-│
-└── .gitignore
-```
-
 ### Directories
 
   Directory   Purpose
   ----------- --------------------------------------
-  `TX/`       ESP32 transmitter PlatformIO project
-  `RX/`       ESP32 receiver PlatformIO project
-  `PC/`       Python mouse-drawing application
+  `tx/`       ESP32 transmitter PlatformIO project
+  `rx/`       ESP32 receiver PlatformIO project
+  `Python_Code/`       Python mouse-drawing application
 
 ------------------------------------------------------------------------
 
@@ -182,16 +159,9 @@ Windows.
 
 ### 1. Clone the repository
 
-``` bash
-git clone https://github.com/YOUR_USERNAME/esp32-wireless-drawing.git
-cd esp32-wireless-drawing
-```
-
-Replace `YOUR_USERNAME` with your GitHub username.
-
 ### 2. Upload the RX firmware
 
-Open the `RX` folder in VS Code with PlatformIO and upload the firmware
+Open the `rx` folder in VS Code with PlatformIO and upload the firmware
 to the receiver ESP32.
 
 The RX connects to the OLED using:
@@ -203,7 +173,7 @@ SCL → GPIO 22
 
 ### 3. Upload the TX firmware
 
-Open the `TX` folder in PlatformIO and upload the firmware to the
+Open the `tx` folder in PlatformIO and upload the firmware to the
 transmitter ESP32.
 
 The TX is connected to the PC through USB.
@@ -213,7 +183,7 @@ The TX is connected to the PC through USB.
 Open:
 
 ``` text
-PC/live_draw.py
+Python_Code/live_draw.py
 ```
 
 Find:
@@ -238,7 +208,7 @@ port.
 Then run:
 
 ``` bash
-python PC/live_draw.py
+python Python_Code/live_draw.py
 ```
 
 ------------------------------------------------------------------------
