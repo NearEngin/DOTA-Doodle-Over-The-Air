@@ -92,8 +92,11 @@ The OLED is connected to the RX ESP32 using I²C.
   OLED     ESP32 RX Function
   ------ ---------- -----------
   VCC          3.3V Power
+  
   GND           GND Ground
+
   SDA       GPIO 21 I²C data
+  
   SCL       GPIO 22 I²C clock
 
 ### OLED Configuration
