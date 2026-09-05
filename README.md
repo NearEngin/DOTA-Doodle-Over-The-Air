@@ -1,4 +1,4 @@
-# ESP32 Wireless Drawing System
+# DOTA (Doodle Over The Air)
 
 A real-time wireless drawing system that captures mouse input on a PC,
 transmits drawing commands through an ESP32 transmitter using ESP-NOW,
